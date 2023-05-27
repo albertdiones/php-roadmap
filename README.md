@@ -19,11 +19,13 @@ echo $a;
 ```
 
 
-# 2. basic variables
+# 2. array variables
 ```php
 <?php
-$a = "Hello";
-$b = "World";
+$a = ["Hello"," xxx ", "World"]
 
-echo $a;
+
+foreach ($a as $b => $c) {
+   echo $a;
+}
 ```

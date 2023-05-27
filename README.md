@@ -50,7 +50,7 @@ foreach ($a as $b => $c) {
 }
 ```
 
-# 4. SuperGlobals: $_GET
+# 4. SuperGlobals: $_GET and query strings
 access the php file you made on the browser and append `?page=login&mode=show`
 
 ```php
@@ -60,6 +60,22 @@ echo $_GET['page']; # the index starts with 0, so 0 is "Hello"
 echo "\n<br />\n"; # This is a line break
 
 foreach ($_GET as $b => $c) {
+   echo $c;
+}
+```
+
+
+
+# 4. SuperGlobals: $_POST and html forms
+access the php file you made on the browser and append `?page=login&mode=show`
+
+```php
+<?php
+
+echo $_POST['username']; # the index starts with 0, so 0 is "Hello"
+echo "\n<br />\n"; # This is a line break
+
+foreach ($_POST as $b => $c) {
    echo $c;
 }
 ```

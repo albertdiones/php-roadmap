@@ -32,7 +32,7 @@ foreach ($a as $b => $c) {
 
 
 
-# 3. associate array variables
+# 3. Associative array variables
 ```php
 <?php
 

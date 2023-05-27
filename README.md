@@ -6,7 +6,6 @@ Choices:
 * Install XAMPP
 * Install WAMP
 * Install MAMP
-* Install MAMP
 
 
 # 1. basic variables
@@ -47,7 +46,7 @@ $brownie = [
 echo $brownie['age']; # the index starts with 0, so 0 is "Hello"
 
 foreach ($a as $b => $c) {
-   echo $a;
+   echo $c;
 }
 ```
 
@@ -56,11 +55,11 @@ access the php file you made on the browser and append `?page=login&mode=show`
 
 ```php
 <?php
-$a = ["Hello"," xxx ", "World"]
 
-echo $a[2]; # the index starts with 0, so 0 is "Hello"
+echo $_GET['page']; # the index starts with 0, so 0 is "Hello"
+echo "\n<br />\n"; # This is a line break
 
-foreach ($a as $b => $c) {
-   echo $a;
+foreach ($_GET as $b => $c) {
+   echo $c;
 }
 ```

@@ -79,3 +79,17 @@ foreach ($_POST as $b => $c) {
    echo $c;
 }
 ```
+
+# 5. Session: session_start()
+create a single-user login page with username and password on variable, and session_start() to access $_SESSION superglobal
+
+# 6. Study MySQL outside PHP
+Install MySQL server on your computer and install a MySQL client
+Study how to:
+  # create a database,
+  # create table
+  # insert rows
+  # update row
+  # select row
+  # delete roww
+  # create a user table with username and password columns

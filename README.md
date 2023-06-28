@@ -86,10 +86,10 @@ create a single-user login page with username and password on variable, and sess
 # 6. Study MySQL outside PHP
 Install MySQL server on your computer and install a MySQL client
 Study how to:
-  # create a database,
-  # create table
-  # insert rows
-  # update row
-  # select row
-  # delete roww
-  # create a user table with username and password columns
+  * create a database,
+  * create table
+  * insert rows
+  * update row
+  * select row
+  * delete roww
+  * create a user table with username and password columns

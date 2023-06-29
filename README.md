@@ -93,3 +93,24 @@ Study how to:
   * select row
   * delete roww
   * create a user table with username and password columns
+
+# 7. Connect PHP to MySQL
+Create a test script connect.php to test the mysql
+
+```php
+<?php
+$username = 'localhost';
+$username = 'username';
+$password = 'password';
+$port = '3306';
+$database = 'my_database_name_replace_me';
+$connection = mysqli_connect($host, $username, $password, $database, $port);
+
+if (!mysqli_connect_errno()) {
+    echo "Connected";
+}
+else {
+   echo 'Error: ' . mysqli_connect_error());
+}
+?>
+```

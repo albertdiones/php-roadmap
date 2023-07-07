@@ -83,6 +83,52 @@ foreach ($_POST as $b => $c) {
 # 5. Session: session_start()
 create a single-user login page with username and password on variable, and session_start() to access $_SESSION superglobal
 
+# 6. Login with a hardcoded password
+Create a working login form that verifies the username and the password of the user
+
+```php
+<?php
+function login($username, $password) {
+   if ($username !== 'admin') {
+      return false;
+   }
+   if ($password !== 'Pikachu0123') {
+      return false;
+   }
+   return true;
+}
+
+login($_POST['username'], $_POST['password']);
+?>
+<form method='post'>
+<input name='username' type='text' />
+<input name='password' type='text' /> 
+<button type='submit'>Submit</button>
+</form>
+```
+
+Test case #1
+1. Try with incorrect username and incorrect password
+2. Expected: Invalid login
+
+Test case #2
+1. Try with correct username but wrong password
+2. Expected: Invalid login
+
+Test case #3
+1. Try with incorrect username but correct password
+2. Expected: Invalid login
+
+
+Test case #4
+1. Try with correct username and correct username
+2. Expected: Redirects to login successful page, and visiting the login page redirects to login succesful page
+
+Excercises:
+1. change the type of the password field to "password" so the texts you type isn't visible
+2. change the text of the button to "Login" so it is more accurate
+3. change the function name "login" to something else (e.g. "loginAsAdmin()")
+
 # 6. Study MySQL outside PHP
 Install MySQL server on your computer and install a MySQL client
 Study how to:

@@ -160,3 +160,6 @@ else {
 }
 ?>
 ```
+
+8. Select and list using PHP
+9. Create dynamic pages using query string and select

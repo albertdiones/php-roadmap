@@ -161,7 +161,9 @@ else {
 ?>
 ```
 
-8. Select and list using PHP
-9. Create dynamic pages using query string and select
-10. Study OOP PHP
-11. Replace mysqli with PDO
+8. Login from database information
+9. Multiple login
+10. Select and list using PHP
+11. Create dynamic pages using query string and select
+12. Study OOP PHP
+13. Replace mysqli with PDO
